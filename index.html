@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BISON - 지속 가능한 스마트 팩토리</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <style>
     body {
       background-image: url('/background.jpg');
@@ -26,133 +26,117 @@
   </style>
 </head>
 <body class="font-sans">
-    <!-- Navigation -->
-    <nav class="flex items-center justify-between p-6 max-w-6xl mx-auto">
-        <div class="text-2xl font-bold">BISON</div>
-        <ul class="flex space-x-8 text-sm">
-            <li><a href="#easy" class="hover:text-gray-600">Easy</a></li>
-            <li><a href="#fast" class="hover:text-gray-600">Fast</a></li>
-            <li><a href="#continue" class="hover:text-gray-600">Continue</a></li>
-            <li><a href="#solution" class="hover:text-gray-600">솔루션</a></li>
-            <li><a href="#subscription" class="hover:text-gray-600">구독 서비스</a></li>
-            <li><a href="#reference" class="hover:text-gray-600">레퍼런스</a></li>
-            <li><a href="#contact" class="hover:text-gray-600">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav class="flex items-center justify-between p-6 max-w-6xl mx-auto">
+    <div class="text-2xl font-bold">BISON</div>
+    <ul class="flex space-x-8 text-sm">
+      <li><a href="ai_consulting.html" class="hover:text-gray-600">Easy</a></li>
+      <li><a href="#fast" class="hover:text-gray-600">Fast</a></li>
+      <li><a href="#continue" class="hover:text-gray-600">Continue</a></li>
+      <li><a href="#solution" class="hover:text-gray-600">솔루션</a></li>
+      <li><a href="#subscription" class="hover:text-gray-600">구독 서비스</a></li>
+      <li><a href="#reference" class="hover:text-gray-600">레퍼런스</a></li>
+      <li><a href="#contact" class="hover:text-gray-600">Contact</a></li>
+    </ul>
+  </nav>
 
-   <!-- Hero Section -->
-    <section class="relative h-[70vh] flex flex-col justify-center items-center text-center px-0">
-        <div class="w-full mb-8 overflow-hidden">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="image/main_image2.png" class="w-full h-full object-cover" alt="제품 소개">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="image/another_image.png" class="w-full h-full object-cover" alt="두번째 이미지">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="image/third_image.png" class="w-full h-full object-cover" alt="세번째 이미지">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+  <!-- Hero Section -->
+  <section class="relative flex flex-col justify-center items-center text-center">
+    <div class="w-full mb-8 overflow-hidden">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <img src="image/main_image2.png" class="w-full h-[60vh] object-cover" alt="스마트팩토리 머신비전 메인 이미지">
+          </div>
+          <div class="swiper-slide relative">
+            <img src="image/ai_consulting.png" class="w-full h-[60vh] object-cover" alt="BISON AI consulting 서비스 이미지">
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-white p-4">
+              <h2 class="text-3xl font-bold mb-2">AI consulting을 더 빠르고 쉽게</h2>
+              <p class="mb-4">당신의 스마트 팩토리를 AI로 1시간 만에 진단받으세요</p>
+              <a href="ai_consulting.html" class="px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition">지금 시작하기</a>
             </div>
+          </div>
+          <div class="swiper-slide relative">
+            <img src="image/third_image.png" class="w-full h-[60vh] object-cover" alt="스마트팩토리 지속 서비스 이미지">
+          </div>
         </div>
-        <h1 class="text-5xl font-semibold mb-4">Easy, Fast, Continue</h1>
-        <p class="text-lg max-w-xl mb-8">지속 가능한 스마트 팩토리를 만듭니다.</p>
-        <a href="#easy" class="px-8 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition">Learn More</a>
-    </section>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <h1 class="text-5xl font-semibold mb-4">Easy, Fast, Continue</h1>
+    <p class="text-lg max-w-xl mb-8">지속 가능한 스마트 팩토리를 만듭니다.</p>
+    <a href="ai_consulting" class="px-8 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition">Learn More</a>
+  </section>
 
-<!-- Swiper 라이브러리 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    new Swiper('.swiper', {
-      loop: true,
-      autoplay: { delay: 3000 },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+  <!-- Easy Section -->
+  <section id="easy" class="py-20 bg-white bg-opacity-90">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Easy</h2>
+      <p class="text-gray-700 mb-8">간단한 클릭 몇번이면 한 시간 내로 H/W 사양, 예상 견적, 투자회수기간이 확인 가능합니다.</p>
+      <a href="ai_consulting">
+        <img src="easy-example.png" alt="BISON Easy 클릭 예시 이미지" class="mx-auto w-full md:w-2/3 rounded-lg shadow-md hover:scale-105 transition">
+      </a>
+    </div>
+  </section>
+
+  <!-- Fast Section -->
+  <section id="fast" class="py-20 bg-gray-50 bg-opacity-90">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Fast</h2>
+      <p class="text-gray-700 mb-8">기능 별 모듈화를 통해 필요한 기능만 선택하여 10일 이내 비전프로그램을 구축합니다.</p>
+      <img src="fast-example.png" alt="BISON Fast 모듈화 이미지" class="mx-auto w-full md:w-2/3 rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- Continue Section -->
+  <section id="continue" class="py-20 bg-white bg-opacity-90">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Continue</h2>
+      <p class="text-gray-700 mb-8">무상 보증기간 3년, 이후 구독형 고도화 서비스를 통해 AI 모델을 전문가가 지속적으로 고도화합니다.</p>
+      <img src="continue-example.png" alt="BISON Continue AI 서비스 이미지" class="mx-auto w-full md:w-2/3 rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- Reference Section -->
+  <section id="reference" class="py-20 bg-gray-50 bg-opacity-80">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">레퍼런스</h2>
+    </div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-lg shadow-md">
+        <h3 class="font-semibold mb-2">자동차 분야</h3>
+        <p class="text-gray-600 text-sm">S사 캠 샤프트 검사 시스템</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-md">
+        <h3 class="font-semibold mb-2">2차전지 분야</h3>
+        <p class="text-gray-600 text-sm">인라인 검사 솔루션 적용</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow-md">
+        <h3 class="font-semibold mb-2">로봇 비전</h3>
+        <p class="text-gray-600 text-sm">Alignment Vision 시스템</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="py-12">
+    <div class="max-w-6xl mx-auto text-center bg-white bg-opacity-90 p-8 rounded-lg">
+      <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+      <p class="text-gray-600 mb-1">경기도 화성시 동탄영천로 150 현대실리콘앨리 B동 1013호</p>
+      <p class="text-gray-600 mb-1">www.bison0507.com | sales@bison0507.com</p>
+      <p class="text-gray-600">© 2025 BISON. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.swiper', {
+        loop: true,
+        autoplay: { delay: 3000 },
+        pagination: { el: '.swiper-pagination', clickable: true },
+      });
     });
-  });
-</script>
-
-    <!-- Swiper 라이브러리 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            new Swiper('.swiper', {
-                loop: true,
-                autoplay: { delay: 3000 },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
-        });
-    </script>
-
-    <!-- Easy Section -->
-    <section id="easy" class="py-20 bg-white bg-opacity-90">
-        <div class="max-w-4xl mx-auto text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Easy</h2>
-            <p class="text-gray-700 mb-8">간단한 클릭 몇번이면 한 시간 내로 H/W 사양, 예상 견적, 투자회수기간이 확인 가능합니다.</p>
-            <img src="easy-example.png" alt="Easy 설명 이미지" class="mx-auto w-full md:w-2/3 rounded-lg shadow-md">
-        </div>
-    </section>
-
-    <!-- Fast Section -->
-    <section id="fast" class="py-20 bg-gray-50 bg-opacity-90">
-        <div class="max-w-4xl mx-auto text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Fast</h2>
-            <p class="text-gray-700 mb-8">기능 별 모듈화를 통해 필요한 기능만 선택하여 10일 이내 비전프로그램을 구축합니다.</p>
-            <img src="fast-example.png" alt="Fast 설명 이미지" class="mx-auto w-full md:w-2/3 rounded-lg shadow-md">
-        </div>
-    </section>
-
-    <!-- Continue Section -->
-    <section id="continue" class="py-20 bg-white bg-opacity-90">
-        <div class="max-w-4xl mx-auto text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">Continue</h2>
-            <p class="text-gray-700 mb-8">
-                무상 보증기간 3년, 그 이후에도 구독형 고도화 서비스를 통해 AI 모델을 전문가가 고도화합니다. </p>
-            <img src="continue-example.png" alt="Continue 설명 이미지" class="mx-auto w-full md:w-2/3 rounded-lg shadow-md">
-        </div>
-    </section>
-
-
-    <!-- Reference Section -->
-    <section id="reference" class="py-20 bg-gray-50 bg-opacity-80">
-        <div class="max-w-6xl mx-auto text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">레퍼런스</h2>
-        </div>
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-6 bg-white rounded-lg shadow-md">
-                <h3 class="font-semibold mb-2">자동차 분야</h3>
-                <p class="text-gray-600 text-sm">S사 캠 샤프트 검사 시스템</p>
-            </div>
-            <div class="p-6 bg-white rounded-lg shadow-md">
-                <h3 class="font-semibold mb-2">2차전지 분야</h3>
-                <p class="text-gray-600 text-sm">인라인 검사 솔루션 적용</p>
-            </div>
-            <div class="p-6 bg-white rounded-lg shadow-md">
-                <h3 class="font-semibold mb-2">로봇 비전</h3>
-                <p class="text-gray-600 text-sm">Alignment Vision 시스템</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <footer id="contact" class="py-12">
-        <div class="max-w-6xl mx-auto text-center bg-white bg-opacity-90 p-8 rounded-lg">
-            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-            <p class="text-gray-600 mb-1">경기도 화성시 동탄영천로 150 현대실리콘앨리 B동 1013호</p>
-            <p class="text-gray-600 mb-1">www.bison0507.com | sales@bison0507.com</p>
-            <p class="text-gray-600">© 2025 BISON. All rights reserved.</p>
-        </div>
-    </footer>
+  </script>
 </body>
 </html>
